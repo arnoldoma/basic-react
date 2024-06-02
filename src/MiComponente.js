@@ -7,15 +7,18 @@ import React from 'react';
 
 const MiComponente = () => {
     // Variables
-    let nombre = "Amap-dev";
+    const nombre = "Amap-dev";
+    const users = {
+        nombre: "Ama Dev",
+        direccion: "Ciudad"
+    } 
     return (<div className="mi-componente">
         <hr />
         <p>Arnoldo Ma</p>
         <ul>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node JS</li>
+            <li>Nombre: {nombre}</li>
+            <li>Usuario: {JSON.stringify(users)}</li>
+            <li>Direccion: {users.direccion}</li>
         </ul>
     </div>)
 }

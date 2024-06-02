@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import MiComponente from './MiComponente';
+import MiComponenteDos from './MiComponenteDos';
+import { MiComponenteTres } from './MiComponenteTres';
 
 function App() {
+  const fichaMedica = {grupoSanguineo:"H+",alergia:"Ninguna"};
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,10 +16,8 @@ function App() {
           recargar.
         </p>
         <MiComponente/>
-        <MiComponente/>
-        <MiComponente/>
-        <MiComponente/>
-
+        <MiComponenteDos/>
+        <MiComponenteTres nombre="Ama" apellido="Dev" ficha={fichaMedica} />
       </header>
     </div>
   );
